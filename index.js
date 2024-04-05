@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const imageList = document.getElementById('imageList');
     
     // Fetch list of images from imgs folder
-    fetch('/imgs/')
+    fetch('imgs/')
         .then(response => response.text())
         .then(data => {
             // Extract image filenames from directory listing
