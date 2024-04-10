@@ -1,9 +1,9 @@
 // Fetch images from imgs folder and display them in a list
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     const imageList = document.getElementById('imageList');
     
     // Fetch list of images from imgs folder
-    fetch('/imgs/')
+    fetch('imgs/')
         .then(response => response.text())
         .then(data => {
             // Extract image filenames from directory listing
