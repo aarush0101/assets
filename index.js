@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
                 listHTML += '</li>'; 
             }
             listHTML += '</ul>';
-            imageList.innerHTML = listHTML; // Update HTML content of the list
+            imageList.innerHTML = listHTML; 
         })
         .catch(error => console.error('Error fetching images:', error));
 });
