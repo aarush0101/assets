@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
                 for (let j = i; j < Math.min(i + filenamesPerLine, imageFiles.length); j++) {
                     listHTML += ` • ${imageFiles[j]}`; // Add bullet point and filename
                 }
-                listHTML += '</li>'; // End list item
+                listHTML += '</li>'; 
             }
             listHTML += '</ul>';
             imageList.innerHTML = listHTML; // Update HTML content of the list
