@@ -1,0 +1,16 @@
+name: CORS policy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  cors:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add CORS policy
+        uses: christian-draeger/add-cors-headers@v3.1
+        with:
+          source: '/**'
+          headers: 'Access-Control-Allow-Origin'
+          values: '*'
