@@ -1,0 +1,12 @@
+{
+  "giveaway": {
+    "name": "Giveaway",
+    "url": "https://github.com/aarush0101/pixelite-giveaways",
+    "standalone": false,
+    "install": "@giveaways",
+    "user": "aarush0101",
+    "repo": "pixelite-giveaways",
+    "branch": "master",
+    "link": "https://github.com/aarush0101/pixelite-giveaways/master.zip",
+  }
+}
