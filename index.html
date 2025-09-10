@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <!-- Basic SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Image Retriever</title>
+    <meta name="description" content="Simple Image Retriever – a lightweight GitHub Pages service for retrieving stored images at edge.">
+    <meta name="keywords" content="image retriever, GitHub Pages, image hosting, static assets, fetch images">
+    <meta name="author" content="AARUSH MASTER">
+    <link rel="canonical" href="https://aarush0101.github.io/assets/">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+
+    <!-- Google Font: Rubik -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Simple Image Retriever | Fast GitHub Pages Image Hosting</title>
 </head>
 <body>
-    <h1>
-        Simple Image Retriever
-    </h1>
+    <header>
+        <h1>Simple Image Retriever</h1>
+        <p class="tagline">Fast, lightweight, and reliable image retrieval directly from GitHub Pages.</p>
+    </header>
+
     <main>
-        <p>This is a simple GitHub Pages site for fetching images.</p>
-        <p>Just visit the URL /imgs/{image_name} to retrieve a stored inage at edge.</p>
-        <p>For any support, please contact maintainers.</p>
+        <section>
+            <h2>About This Project</h2>
+            <p>
+                Simple Image Retriever is a minimal GitHub Pages site built for fetching and serving stored images 
+                at edge. Whether you need quick access to assets or lightweight hosting, this solution delivers.
+            </p>
+        </section>
+
+        <section>
+            <h2>How It Works</h2>
+            <p>
+                To access an image, simply visit:
+            </p>
+            <code>/imgs/{image_name}</code>
+            <p>
+                Replace <code>{image_name}</code> with the actual file name of the image stored in the repository.
+            </p>
+        </section>
+
+        <section>
+            <h2>Need Help?</h2>
+            <p>
+                For inquiries, support, or contributions, please contact me by
+                <a href="https://github.com/aarush0101" target="_blank">my GitHub</a>.
+            </p>
+        </section>
     </main>
+
     <footer>
-        <span>
-            I do not consent to reproduction of any of the images stored 
-            in any way for any purpose.
-        </span>
+        <p class="consent">
+            Consent Notice:  
+            Images made available here are provided solely for access via this service.  
+            Reproduction, redistribution, adaptation, reinterpretation, or any other form of use—whether commercial, private, educational, derivative, or otherwise—should not be assumed as permitted, except where explicitly clarified in writing.  
+            By accessing, you acknowledge and accept these terms in their broadest possible sense.
+        </p>
+        <p class="credits">© <span id="year"></span> AARUSH MASTER. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Auto-update footer year
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
